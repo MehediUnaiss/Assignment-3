@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisyUI and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind-config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "rgba(171, 239, 95, 1)",
+                        secondary: "rgba(171, 239, 95, 0.5)",
+                        body: "rgba(73, 73, 73, 1)",
+                        accent: "rgba(33, 33, 33, 1)",
+                        // body_neutral: "rgb(51, 51, 51)",
+                    },
+                    fontFamily: {
+                        manrope: "Manrope",
+
+                    },
+                    backgroundImage: {
+                        // leaf1: "url('./images/leaf01.png')",
+                        // call_to_action: "url('./images/call.jpg')",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-manrope bg-zinc-50">
+    <!-- header section -->
+    <header class="container mx-auto">
+        <!-- navbar start-->
+        <div class="navbar py-10">
+            <!-- mobile device -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl cursor-pointer"><img src="assets/logo.png" alt="logo"></a>
+            </div>
+            <!-- lg device -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-neutral-900 text-base font-bold"><a>Home</a></li>
+                    <li class="text-neutral-500 text-base"><a>Services</a></li>
+                    <li class="text-neutral-500 text-base"><a>Portfolio</a></li>
+                    <li class="text-neutral-500 text-base"><a>Blogs</a></li>
+                    <li class="text-neutral-500 text-base"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-3">
+                <a class="btn rounded-full bg-white border border-inherit"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="btn rounded-full bg-white border border-inherit"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="btn bg-primary text-lg font-extrabold rounded-[32px]" href="#">Book Consult <i
+                        class="fa-solid fa-arrow-right bg-black rounded-full p-1" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <!-- nav end -->
+    </header>
+
+    <!-- main section -->
+    <main></main>
+
+    <!-- footer section -->
+    <footer></footer>
+</body>
+
+</html>
