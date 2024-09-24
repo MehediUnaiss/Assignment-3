@@ -42,7 +42,7 @@
     </script>
 </head>
 
-<body class="font-manrope bg-zinc-50">
+<body class="font-manrope bg-gradient-to-b from-neutral-100 to-white">
     <!-- header section -->
     <header class="container mx-auto">
         <!-- navbar start-->
@@ -59,15 +59,11 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li class="text-neutral-900 text-base font-bold"><a>Home</a></li>
+                        <li class="text-neutral-500 text-base"><a>Services</a></li>
+                        <li class="text-neutral-500 text-base"><a>Portfolio</a></li>
+                        <li class="text-neutral-500 text-base"><a>Blogs</a></li>
+                        <li class="text-neutral-500 text-base"><a>Contact Us</a></li>
                     </ul>
                 </div>
                 <a class="text-xl cursor-pointer"><img src="assets/logo.png" alt="logo"></a>
@@ -115,7 +111,50 @@
     </header>
 
     <!-- main section -->
-    <main></main>
+    <main class="bg-neutral-100">
+        <!-- about us section start -->
+        <section class="container mx-auto pt-20 pb-24">
+            <!-- text section -->
+            <div class="flex flex-col-reverse md:flex-row gap-8">
+                <div class="space-y-6 flex-1">
+                    <button class="bg-white btn rounded-full"><i class="fa-solid fa-arrow-right pr-1"></i>About
+                        Us</button>
+                    <h3 class="text-[40px] font-bold text-accent">We design thoughtful, liveable spaces</h3>
+                    <p class="text-base text-body w-10/12">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <!-- cards -->
+                    <div class="flex items-center gap-3 bg-white p-6 rounded-2xl">
+                        <!-- icon -->
+                        <img src="assets/commercial.png" alt="">
+                        <!-- text -->
+                        <div class="space-y-2">
+                            <h4 class="text-xl font-extrabold leading-6 text-body">Commercial</h4>
+                            <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and
+                                modern.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white p-6 rounded-2xl">
+                        <!-- icon -->
+                        <img src="assets/residential.png" alt="">
+                        <!-- text -->
+                        <div class="space-y-2">
+                            <h4 class="text-xl font-extrabold leading-6 text-body">Residential</h4>
+                            <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and
+                                modern.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- img section  -->
+                <div class="flex-1 flex justify-center items-center">
+                    <img src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- about us section end -->
+    </main>
 
     <!-- footer section -->
     <footer></footer>
